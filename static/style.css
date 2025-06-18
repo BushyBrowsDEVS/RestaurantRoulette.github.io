@@ -1,0 +1,141 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+#flip {
+  padding: 5px;
+  background-color: #004BA8;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 40%;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#panel {
+  padding: 5px;
+  display: none;
+  background-color: #3E78B2;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 37.5%;
+  border-radius: 0px 0px 10px 10px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+table, th, tr, td{
+  text-align: left;
+  vertical-align: top;
+}
+
+img {
+  width: 300px;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.center {
+  margin: 0 auto;
+  width: 50%;
+}
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4A525A;
+}
+
+header {
+  background-color: #24272B;
+  color: #fff;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 25%;
+  border-radius: 10px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  background-color: #66ccff;
+  font-family: Cambria, serif;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+footer {
+  background-color: #262626;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  bottom: 0
+}
+
+#chart {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#question {
+  background: #66ccff;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 25%;
+  border-radius: 10px;
+}

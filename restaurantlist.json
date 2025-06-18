@@ -1,0 +1,514 @@
+{
+        "restaurantList": [
+                {
+                        "name": "Chipotle",
+                        "cuisine": "mexican",
+                        "distance": 3,
+                        "description": "Fast-casual mexican chain known for burritos and customizable bowls.",
+                        "famous items":"Burrito, Salad Bowl, Tacos",
+                        "type":"fastfood",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Taco Bell",
+                        "cuisine": "mexican",
+                        "distance": 3,
+                        "description": "Fast food chain serving tacos, burritos, and various Tex-Mex food items.",
+                        "famous items":"Crunchy Taco, Cheesy Fiesta Potatoes, Quesadilla",
+                        "type":"fastfood",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Wendy’s",
+                        "cuisine": "american",
+                        "distance": 3.5,
+                        "description": "Fast food chain known for fresh, high-quality hamburgers and sides.",
+                        "famous items":"Baconator, Spicy Chicken Sandwich, Frosty",
+                        "type":"fastfood",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["keto","glutenfree",""]
+                },
+                {
+                        "name": "In and Out",
+                        "cuisine": "american",
+                        "distance": 4,
+                        "description": "Popular California-based burger chain famous for its simple menu.",
+                        "famous items":"Double-Double, Animal Style Fries, Milkshake",
+                        "type":"fastfood",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["keto","",""]
+                },
+                {
+                        "name": "Burger King",
+                        "cuisine": "american",
+                        "distance": 3.5,
+                        "description": "Fast food chain famous for its flame-grilled burgers.",
+                        "famous items":"Whopper, Chicken Fries, Onion Rings",
+                        "type":"fastfood",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Chick Fil-A",
+                        "cuisine": "american",
+                        "distance": 4,
+                        "description": "Fast food chain specializing in chicken sandwiches and nuggets.",
+                        "famous items":"Chicken Sandwich, Waffle Fries, Milkshake",
+                        "type":"fastfood",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Fusion",
+                        "cuisine": "asian",
+                        "distance": 2,
+                        "description": "Offers a mix of asian cuisines with a modern twist.",
+                        "famous items":"Fusion Roll, Spicy Tuna Salad, Teriyaki Bowl",
+                        "type":"dinein",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Five Guys",
+                        "cuisine": "american",
+                        "distance": 5,
+                        "description": "Fast casual restaurant chain known for burgers and hand-cut fries.",
+                        "famous items":"Cheeseburger, Cajun Fries, Milkshake",
+                        "type":"fastfood",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["keto","",""]
+                },
+                {
+                        "name": "Del Taco",
+                        "cuisine": "mexican",
+                        "distance": 2.5,
+                        "description": "Fast food chain serving a mix of tacos and burritos with a California twist.",
+                        "famous items":"2 Beef Tacos, Macho Combo Burrito, Frijoles Nachos",
+                        "type":"fastfood",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Carl’s Jr",
+                        "cuisine": "american",
+                        "distance": 4,
+                        "description": "Fast food chain that specializes in charbroiled burgers.",
+                        "famous items":"Western Bacon Cheeseburger, Chicken Stars, Fries",
+                        "type":"fastfood",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["keto","",""]
+                },
+                {
+                        "name": "Subway",
+                        "cuisine": "american",
+                        "distance": 2,
+                        "description": "Sandwich chain known for its fresh ingredients and customizable subs.",
+                        "famous items":"Footlong Sub, Salad, Cookies",
+                        "type":"fastfood",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Chaat Paradise",
+                        "cuisine": "indian",
+                        "distance": 7,
+                        "description": "Casual eatery specializing in indian street food and snacks.",
+                        "famous items":"Pani Puri, Bhel Puri, Samosa Chaat",
+                        "type":"dinein",
+                        "meals": ["Lunch","dinner",""],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Mimosa House",
+                        "cuisine": "american",
+                        "distance": 3,
+                        "description": "Brunch-focused restaurant known for cocktails and breakfast items.",
+                        "famous items":"Mimosa Flight, French Toast, Eggs Benedict",
+                        "type":"dinein",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Land Ocean",
+                        "cuisine": "american",
+                        "distance": 5,
+                        "description": "Upscale eatery featuring a mix of land and sea dishes.",
+                        "famous items":"Lobster Bisque, Filet Mignon, Salmon",
+                        "type":"dinein",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "BJ’s Brewhouse",
+                        "cuisine": "american",
+                        "distance": 6,
+                        "description": "Brewery and restaurant offering a wide range of pizzas and craft beers.",
+                        "famous items":"Pizookie, Deep Dish Pizza, Brewhouse Burger",
+                        "type":"dinein",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Visconti’s",
+                        "cuisine": "italian",
+                        "distance": 5,
+                        "description": "Family-owned restaurant known for homemade italian dishes.",
+                        "famous items":"Lasagna, Chicken Parm, Tiramisu",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Olive Garden",
+                        "cuisine": "italian",
+                        "distance": 5,
+                        "description": "Chain known for its italian-american cuisine and breadsticks.",
+                        "famous items":"Fettuccine Alfredo, Eggplant Parm, Tiramisu",
+                        "type":"dinein",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Jack’s Urban Eats",
+                        "cuisine": "american",
+                        "distance": 4,
+                        "description": "Casual dining option featuring gourmet sandwiches and salads.",
+                        "famous items":"Urban Cobb, Beer-Battered Fish, Burger",
+                        "type":"dinein",
+                        "meals": ["breakfast","lunch",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Taiko Sushi",
+                        "cuisine": "japanese",
+                        "distance": 4.5,
+                        "description": "Sushi restaurant offering a variety of rolls and japanese dishes.",
+                        "famous items":"Dragon Roll, Sashimi Platter, Miso Soup",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Pita Are Us",
+                        "cuisine": "Mediterranean",
+                        "distance": 3,
+                        "description": "Fast-casual spot focused on fresh Mediterranean wraps and salads.",
+                        "famous items":"Falafel Wrap, Lamb Gyro, Hummus",
+                        "type":"fastfood",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Zocalo",
+                        "cuisine": "mexican",
+                        "distance": 5.5,
+                        "description": "Restaurant serving contemporary mexican cuisine with fresh ingredients.",
+                        "famous items":"Enchiladas, Tacos, Mole",
+                        "type":"dinein",
+                        "meals": ["lunch","",""],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Buckhorn BBQ + Grill",
+                        "cuisine": "BBQ",
+                        "distance": 5,
+                        "description": "A rustic BBQ spot known for its smoked meats and homemade sauces.",
+                        "famous items":"Smoked Brisket, BBQ Ribs, Pulled Pork",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Fukumi Ramen X Momo Katsu",
+                        "cuisine": "japanese",
+                        "distance": 3,
+                        "description": "Offers ramen and katsu, focusing on authentic flavors.",
+                        "famous items":"Tonkotsu Ramen, Chicken Katsu, Gyoza",
+                        "type":"dinein",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegetarian","",""]
+                },
+                {
+                        "name": "The Melt",
+                        "cuisine": "american",
+                        "distance": 4,
+                        "description": "Casual eatery specializing in grilled cheese and comfort food.",
+                        "famous items":"Grilled Cheese Sandwich, Tomato Soup, Fries",
+                        "type":"fastcasual",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Back Bistro",
+                        "cuisine": "american",
+                        "distance": 6,
+                        "description": "A cozy bistro with a focus on seasonal ingredients and comfort food.",
+                        "famous items":"Back Bistro Burger, Risotto, Seasonal Salad",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Pier 50",
+                        "cuisine": "Seafood",
+                        "distance": 7,
+                        "description": "A lakeside restaurant serving fresh seafood with beautiful views.",
+                        "famous items":"Clam Chowder, Grilled Salmon, Lobster Roll",
+                        "type":"dinein",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Petra Greek",
+                        "cuisine": "Greek",
+                        "distance": 5,
+                        "description": "Traditional Greek cuisine featuring a variety of dishes.",
+                        "famous items":"Gyro Plate, Spanakopita, Baklava",
+                        "type":"dinein",
+                        "meals": ["lunch","",""],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Hermanos Jalisco Grill",
+                        "cuisine": "mexican",
+                        "distance": 2,
+                        "description": "A vibrant spot offering authentic mexican dishes and specialties.",
+                        "famous items":"Tacos, Burritos, Quesadillas",
+                        "type":"fastcasual",
+                        "meals": ["lunch","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Kiki’s Chicken Place",
+                        "cuisine": "american/Chicken",
+                        "distance": 4,
+                        "description": "Specializes in various chicken dishes and comfort food.",
+                        "famous items":"Fried Chicken, Chicken Sandwich, Waffle Fries",
+                        "type":"fastcasual",
+                        "meals": ["lunch","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Shogun Hibachi Grill & Sushi",
+                        "cuisine": "japanese",
+                        "distance": 3,
+                        "description": "Known for its hibachi grills and sushi specialties.",
+                        "famous items":"Hibachi Chicken, California Roll, Tempura",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Mantra",
+                        "cuisine": "indian",
+                        "distance": 6,
+                        "description": "Offers a unique indian dining experience with traditional flavors.",
+                        "famous items":"Butter Chicken, Lamb Curry, Samosas",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Maylapore",
+                        "cuisine": "indian",
+                        "distance": 5,
+                        "description": "Focuses on South indian cuisine with authentic dishes.",
+                        "famous items":"Dosa, Biryani, Idli",
+                        "type":"dinein",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["vegan","vegetarian",""]
+                },
+                {
+                        "name": "Ramaswaram Cafe",
+                        "cuisine": "indian",
+                        "distance": 8,
+                        "description": "A casual cafe serving a variety of indian snacks and meals.",
+                        "famous items":"Vada Pav, Bhel Puri, Masala Dosa",
+                        "type":"fastcasual",
+                        "meals": ["lunch","",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Sanskrit",
+                        "cuisine": "indian",
+                        "distance": 4,
+                        "description": "Specializes in North indian cuisine with a focus on spices.",
+                        "famous items":"Chicken Tikka Masala, Paneer Butter Masala, Biryani",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Sai Vari",
+                        "cuisine": "indian",
+                        "distance": 5,
+                        "description": "An indian restaurant known for its vegetarian options.",
+                        "famous items":"Idli, Medu Vada, Uttapam",
+                        "type":"dinein",
+                        "meals": ["lunch","",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "thai Paradise",
+                        "cuisine": "thai",
+                        "distance": 3,
+                        "description": "Offers a wide selection of traditional thai dishes.",
+                        "famous items":"Pad thai, Green Curry, Tom Yum Soup",
+                        "type":"dinein",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","",""]
+                },
+                {
+                        "name": "Panda Express",
+                        "cuisine": "chinese",
+                        "distance": 2,
+                        "description": "Fast food chain serving american-chinese cuisine in a casual setting.",
+                        "famous items":"Orange Chicken, Chow Mein, Kung Pao Chicken",
+                        "type":"fastfood",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Noodles and Company",
+                        "cuisine": "american/asian",
+                        "distance": 4,
+                        "description": "Features noodles from various cultures with a focus on freshness.",
+                        "famous items":"japanese Pan Noodles, Mac & Cheese, Pad thai",
+                        "type":"fastcasual",
+                        "meals": ["lunch","",""],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Chilis",
+                        "cuisine": "american",
+                        "distance": 5,
+                        "description": "A casual dining restaurant offering Tex-Mex and american fare.",
+                        "famous items":"Bacon Ranch Quesadillas, Baby Back Ribs, Fajitas",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["keto","",""]
+                },
+                {
+                        "name": "McDonald's",
+                        "cuisine": "american",
+                        "distance": 1.5,
+                        "description": "Global fast-food chain known for burgers and fries.",
+                        "famous items":"Big Mac, Chicken McNuggets, Quarter Pounder",
+                        "type":"fastfood",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Folsom thai",
+                        "cuisine": "thai",
+                        "distance": 2,
+                        "description": "A local favorite serving authentic thai cuisine with a cozy vibe.",
+                        "famous items":"Pad See Ew, Panang Curry, Spring Rolls",
+                        "type":"dinein",
+                        "meals": ["lunch","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Lazy Dog",
+                        "cuisine": "american",
+                        "distance": 4,
+                        "description": "An eclectic american restaurant with a laid-back atmosphere.",
+                        "famous items":"Buffalo Chicken Sandwich, Fish Tacos, Mac & Cheese",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Iron Horse Tavern",
+                        "cuisine": "american",
+                        "distance": 6,
+                        "description": "A rustic tavern offering hearty american dishes and craft beers.",
+                        "famous items":"Ribeye Steak, Craft Burgers, Fish & Chips",
+                        "type":"dinein",
+                        "meals": ["dinner","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Cheesesteak & Grill Stop",
+                        "cuisine": "american",
+                        "distance": 3,
+                        "description": "Specializes in cheesesteaks and grill items, offering a variety of toppings and sides.",
+                        "famous items":"Cheesesteak, Fries, Chicken Sandwich",
+                        "type":"fastfood",
+                        "meals": ["lunch","",""],
+                        "dietary": ["glutenfree","",""]
+                },
+                {
+                        "name": "Steve’s Pizza",
+                        "cuisine": "italian",
+                        "distance": 2,
+                        "description": "Offers a wide selection of pizzas with fresh ingredients, and classic italian dishes.",
+                        "famous items":"Pepperoni Pizza, Margherita Pizza, Calzone",
+                        "type":"dinein",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Pieology",
+                        "cuisine": "pizza",
+                        "distance": 1.5,
+                        "description": "Customizable pizza place, allowing patrons to create their own pies with a variety of toppings.",
+                        "famous items":"Create Your Own Pizza, Garlic Cheese Bread, Salads",
+                        "type":"fastcasual",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","glutenfree","keto"]
+                },
+                {
+                        "name": "Pizza Hut",
+                        "cuisine": "pizza",
+                        "distance": 2,
+                        "description": "Well-known chain restaurant offering a diverse menu focused on pizzas, sides, and desserts.",
+                        "famous items":"Stuffed Crust Pizza, Breadsticks, Cinnabon",
+                        "type":"fastfood",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","glutenfree","vegetarian"]
+                },
+                {
+                        "name": "Andy’s Kitchen",
+                        "cuisine": "american",
+                        "distance": 1,
+                        "description": "Family-friendly restaurant featuring classic american diner food and comfort meals.",
+                        "famous items":"Burgers, Breakfast Platter, Monte Cristo Sandwich",
+                        "type":"dinein",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["vegan","glutenfree","keto"]
+                },
+                {
+                        "name": "Mendocino Farms",
+                        "cuisine": "american",
+                        "distance": 4,
+                        "description": "Casual eatery known for its gourmet sandwiches, salads, and seasonal offerings made with fresh ingredients.",
+                        "famous items":"BBQ Pork Belly Sandwich, Quinoa Harvest Bowl, Tomato Soup",
+                        "type":"fastcasual",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","glutenfree","keto"]
+                },
+                {
+                        "name": "Bakery Bites",
+                        "cuisine": "indian",
+                        "distance": 3,
+                        "description": "Bakeshop that offers a variety of pastries, cakes, and specialty desserts.",
+                        "famous items":"Cupcakes, Croissants, Cookies",
+                        "type":"dinein",
+                        "meals": ["breakfast","lunch","dinner"],
+                        "dietary": ["vegan","glutenfree",""]
+                },
+                {
+                        "name": "Jimboys",
+                        "cuisine": "mexican",
+                        "distance": 2,
+                        "description": "Known for its tacos and unique twist on traditional mexican fare, featuring fresh ingredients.",
+                        "famous items":"Original Tacos, Burritos, Nachos",
+                        "type":"fastfood",
+                        "meals": ["lunch","dinner",""],
+                        "dietary": ["vegan","glutenfree",""]
+                }
+        ]
+}
