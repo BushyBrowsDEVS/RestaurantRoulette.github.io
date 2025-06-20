@@ -96,13 +96,22 @@ document.addEventListener("DOMContentLoaded", function () {
           .then(res => res.json())
           .then(data => {
             const chosenRestaurant = data.restaurant;
+            const imageUrl = data.image_url;
+  
             d3.select("#question h1").text("You got: " + chosenRestaurant);
+  
+            const img = document.getElementById("restaurant-image");
+            if (imageUrl) {
+              img.src = imageUrl;
+              img.style.display = "block";
+              img.alt = chosenRestaurant;
+            } else {
+              img.style.display = "none";
+            }
+  
             container.on("click", spin);
           })
-          .catch(() => {
-            d3.select("#question h1").text("Error getting restaurant");
-            container.on("click", spin);
-          });
-      });
+  
+        });
   }
 });

@@ -1,6 +1,6 @@
-from flask import Flask, request, jsonify, render_template
-import random
 import json
+import random
+from flask import Flask, jsonify, render_template, request
 
 #the function to create list of restaurants from with randomizer will pick:
 def remove_restaurant(filter_flags, filter_keys, quality, restaurantRandomList):
@@ -81,23 +81,76 @@ def get_picked_restaurant():
 
     restaurant_sublist = [r["name"] for r in food_places["restaurantList"]]
 
+    # Ensure these global variables are defined elsewhere in your app.py, e.g.:
+    # fastfood = True
+    # dinein = True
+    # fastcasual = True
+    # breakfast = True
+    # lunch = True
+    # dinner = True
+    # american = True
+    # mexican = True
+    # italian = True
+    # asian = True
+    # indian = True
+    # mediterranean = True
+    # dessert = True
+    # vegan = True
+    # vegetarian = True
+    # keto = True
+    # glutenfree = True
+    # distance_filter = 100 # Example initial value
+
     type_food = [fastfood, dinein, fastcasual]
     type_meals = [breakfast, lunch, dinner]
     type_cuisine = [american, mexican, italian, asian, indian, mediterranean]
     dietary_list = [dessert, vegan, vegetarian, keto, glutenfree]
 
+    # You also need to define your remove_restaurant function. Example:
+    # def remove_restaurant(filter_booleans, filter_keys, json_field, current_restaurant_names_list):
+    #     global food_places # Need access to the full restaurant data
+    #     restaurants_to_remove_names = set()
+    #     
+    #     for i, boolean_filter_value in enumerate(filter_booleans):
+    #         if not boolean_filter_value: # If the filter is OFF (e.g., fastfood = False)
+    #             for restaurant_data in food_places["restaurantList"]:
+    #                 if filter_keys[i] in restaurant_data[json_field]:
+    #                     restaurants_to_remove_names.add(restaurant_data['name'])
+    #     
+    #     # Remove from the list in reverse to avoid index issues
+    #     for restaurant_name in sorted(list(restaurants_to_remove_names), reverse=True):
+    #         if restaurant_name in current_restaurant_names_list:
+    #             current_restaurant_names_list.remove(restaurant_name)
+
+
     # Apply existing filters
-    remove_restaurant(type_food, ["fastfood", "dinein", "fastcasual"], "type", restaurant_sublist)
-    remove_restaurant(type_meals, ["breakfast", "lunch", "dinner"], "meals", restaurant_sublist)
-    remove_restaurant(type_cuisine, ["american", "mexican", "italian", "asian", "indian", "mediterranean"], "cuisine", restaurant_sublist)
-    remove_restaurant(dietary_list, ["dessert", "vegan", "vegetarian", "keto", "glutenfree"], "dietary", restaurant_sublist)
+    remove_restaurant(type_food,
+                      ["fastfood", "dinein", "fastcasual"],
+                      "type",
+                      restaurant_sublist)
+    remove_restaurant(
+        type_meals,
+        ["breakfast", "lunch", "dinner"],
+        "meals",
+        restaurant_sublist)
+    remove_restaurant(
+        type_cuisine,
+        ["american", "mexican", "italian", "asian", "indian", "mediterranean"],
+        "cuisine",
+        restaurant_sublist)
+    remove_restaurant(
+        dietary_list,
+        ["dessert", "vegan", "vegetarian", "keto", "glutenfree"],
+        "dietary",
+        restaurant_sublist
+    )
 
     # Distance filter: remove restaurants farther than distance_filter
     name_to_restaurant = {r['name']: r for r in food_places['restaurantList']}
-    for restaurant_name in restaurant_sublist[:]:
+    # Iterate over a copy of the list to allow modification during iteration
+    for restaurant_name in restaurant_sublist[:]: 
         restaurant = name_to_restaurant.get(restaurant_name)
         if restaurant:
-            # Assume your JSON has a 'distance' field in miles
             if 'distance' in restaurant:
                 if restaurant['distance'] > distance_filter:
                     print(f"Removing {restaurant_name} due to distance filter > {distance_filter} mi")
@@ -105,17 +158,25 @@ def get_picked_restaurant():
             else:
                 # If no distance info, you can decide to keep or remove
                 print(f"No distance info for {restaurant_name}, removing by default")
-                restaurant_sublist.remove(restaurant_name)
+                if restaurant_name in restaurant_sublist: # Check if still present before removing
+                    restaurant_sublist.remove(restaurant_name)
 
     # Pick random from filtered list
     if restaurant_sublist:
-        restaurant_picked = random.choice(restaurant_sublist)
-        print(f"Randomly picked restaurant: {restaurant_picked}")
+        restaurant_picked_name = random.choice(restaurant_sublist)
+        restaurant_obj = name_to_restaurant[restaurant_picked_name]
+        print(f"Randomly picked restaurant: {restaurant_picked_name}")
+        return jsonify({
+            "restaurant": restaurant_picked_name,
+            "image_url": restaurant_obj.get("image", "") # *** CHANGED FROM "image_url" TO "image" ***
+        })
     else:
-        restaurant_picked = "No restaurants match your filters"
-        print(restaurant_picked)
+        return jsonify({
+            "restaurant": "No restaurants match your filters",
+            "image_url": ""
+        })
 
-    return jsonify({"restaurant": restaurant_picked})
+
     
 @app.route('/distance-update', methods=['POST'])
 def distance_update():

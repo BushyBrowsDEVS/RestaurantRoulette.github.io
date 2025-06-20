@@ -47,8 +47,8 @@ table, th, tr, td{
   vertical-align: top;
 }
 
-img {
-  width: 300px;
+.spinning-image { /* Only applies to elements with class="spinning-image" */
+  width: 300px; /* Keep this if it's the desired width for all images */
   animation: rotate 10s linear infinite;
 }
 
@@ -69,7 +69,7 @@ body {
   font-family: Georgia, serif;
   margin: 0;
   padding: 0;
-  background-color: #4A525A;
+  background-color: #5e666e;
 }
 
 header {
@@ -117,7 +117,7 @@ footer {
 
 #chart {
   width: 600px;
-  height: 400px;
+  height: 425px;
   margin: 0 auto;
   display: block;
   font-size: 20px;
@@ -136,6 +136,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 25%;
+  justify-content: center;
+  width: 35%;
   border-radius: 10px;
 }
