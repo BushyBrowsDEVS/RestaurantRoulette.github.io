@@ -40,6 +40,7 @@ mexican = False
 italian = False
 asian = False
 indian = False
+thai = False
 mediterranean = False
 dessert = False
 vegan = False
@@ -103,7 +104,7 @@ def get_picked_restaurant():
 
     type_food = [fastfood, dinein, fastcasual]
     type_meals = [breakfast, lunch, dinner]
-    type_cuisine = [american, mexican, italian, asian, indian, mediterranean]
+    type_cuisine = [american, mexican, italian, asian, indian, thai, mediterranean]
     dietary_list = [dessert, vegan, vegetarian, keto, glutenfree]
 
     # You also need to define your remove_restaurant function. Example:

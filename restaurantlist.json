@@ -310,7 +310,7 @@
 },
 {
         "name": "Kiki’s Chicken Place",
-        "cuisine": "american/Chicken",
+        "cuisine": "american",
         "distance": 4,
         "description": "Specializes in various chicken dishes and comfort food.",
         "famous items":"Fried Chicken, Chicken Sandwich, Waffle Fries",
@@ -409,7 +409,7 @@
 },
 {
         "name": "Noodles and Company",
-        "cuisine": "american/asian",
+        "cuisine": "asian",
         "distance": 4,
         "description": "Features noodles from various cultures with a focus on freshness.",
         "famous items":"japanese Pan Noodles, Mac & Cheese, Pad thai",
